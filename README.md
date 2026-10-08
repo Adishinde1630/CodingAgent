@@ -99,7 +99,7 @@ coding-agent/
 | Variable | Required | Description |
 |---|---|---|
 | `GROQ_API_KEY` | yes | Groq API key (read from env, `.env`, or Streamlit Secrets) |
-| `GROQ_MODEL` | no | Model name, default `llama-3.3-70b-versatile` |
+| `GROQ_MODEL` | no | Model name, default `openai/gpt-oss-20b` |
 
 For `GROQ_API_KEY`, a non-placeholder value in the project `.env` takes precedence
 over an inherited environment variable; otherwise the app falls back to the
@@ -173,7 +173,7 @@ Runs the agent's own suite (no network or API key needed - the LLM is replaced b
 3. In **App settings → Secrets** add:
    ```toml
    GROQ_API_KEY = "your_real_key_here"
-   GROQ_MODEL = "llama-3.3-70b-versatile"
+   GROQ_MODEL = "openai/gpt-oss-20b"
    ```
 4. Deploy. Secrets are exposed to the app through `st.secrets` / environment variables - nothing is committed to GitHub. No absolute paths are used; each session works on its own temp copy of `sample_project/`.
 
