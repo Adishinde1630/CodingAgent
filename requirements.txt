@@ -1,0 +1,5 @@
+streamlit>=1.36
+langgraph>=0.2.50
+groq>=0.11
+python-dotenv>=1.0
+pytest>=8.0
