@@ -90,7 +90,7 @@ coding-agent/
 
 1. Create a key in the [Groq Console](https://console.groq.com/keys) (keys start with `gsk_`).
 2. Put it in `.env` (local) or Streamlit Secrets (deployment). **Never commit it.**
-3. Model is configurable with `GROQ_MODEL`. Default: `llama-3.3-70b-versatile`.
+3. Model is configurable with `GROQ_MODEL`. Default: `openai/gpt-oss-20b`.
 
 > If you see a "model is not available" error, a model may have been retired - set `GROQ_MODEL` to a current model from Groq's model list. A rate-limit response stops the current run without retrying or starting code generation; wait for the indicated Groq limit to reset and try again. A "request too large" response may require a smaller task.
 
